@@ -1,5 +1,5 @@
 import React from 'react'
-import WhatsAppInquiry from '../components/whatsappInquiry'
+import WhatsAppInquiry from '../components/WhatsAppInquiry'
 import ContactDetails from '../components/ContactDetails'
 import ContactInfo from '../components/ContactInfo'
 
