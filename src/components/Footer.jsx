@@ -35,12 +35,12 @@ const Footer = () => {
           
           <div className='w-full'>
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li><a href="/about" className="hover:text-cta">About Us</a></li>
-              <li><a href="/contact" className="hover:text-cta">Accommodation</a></li>
-              <li><a href="/contact" className="hover:text-cta">Activities</a></li>
-              <li><a href="/gallery" className="hover:text-cta">Gallery</a></li>
-              <li><a href="/contact" className="hover:text-cta">Contact</a></li>
+            <ul className="space-y-2 flex flex-col">
+              <NavLink to='/about' className="hover:text-cta">About Us</NavLink>
+              <NavLink to='/accommodation' className="hover:text-cta"> Accommodation</NavLink>
+              <NavLink to='/activities' className="hover:text-cta">Activities</NavLink>
+              <NavLink to='/gallery' className="hover:text-cta">Gallery</NavLink>
+              <NavLink to='/contact' className="hover:text-cta">Contact</NavLink>
             </ul>
           </div>
           
