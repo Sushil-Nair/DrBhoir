@@ -18,7 +18,7 @@ const WhatsAppInquiry = () => {
 
                 <div className='flex flex-col w-full mt-4 group relative gap-10 items-center justify-center'>
                    <NavLink
-                       to="/gallery"
+                       to="https://wa.me/918976022014"
                        className="inline-flex items-center mx-auto bg-[#25D366] text-white font-bold px-6 py-3 rounded-lg hover:bg-green-900 mt-4 gap-4 transition-transform duration-300 group-hover:scale-105">
                            <FaWhatsapp className="ml-2 h-5 w-5" />
                             Connect with Us

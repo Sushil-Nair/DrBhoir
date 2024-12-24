@@ -47,7 +47,7 @@ const Footer = () => {
           <div className='w-full'>
             <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="https://www.facebook.com/people/Palms-Resort-Dr-Bhoir-farm/100092194719192/?_rdr" target='_blank' className="hover:text-fb">
+              <a href="https://www.facebook.com/DrBhoirfarm" target='_blank' className="hover:text-fb">
                 <FaFacebook className="h-6 w-6" />
               </a>
               <a href="https://www.instagram.com/drbhoirfarm/" target='_blank' className="hover:text-insta">

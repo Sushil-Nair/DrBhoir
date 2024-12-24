@@ -2,6 +2,7 @@ import React from 'react'
 import { assets } from '../assets/assets'
 import { NavLink } from 'react-router'
 import { FaArrowRight } from "react-icons/fa";
+import 'animate.css';
 
 const Hero = () => {
   return (
@@ -13,7 +14,7 @@ const Hero = () => {
           <div className="absolute inset-0 bg-black bg-opacity-50" />
           <div className="relative h-full flex items-center justify-center">
              <div className="text-center text-white px-4">
-                 <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to Dr. Bhoir Farm & Resort</h1>
+                 <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-left">Welcome to Dr. Bhoir Farm & Resort</h1>
                  <p className="text-xl md:text-2xl mb-8">Experience luxury in the heart of nature</p>
                  <div className='flex gap-4 justify-center items-center'>
                   <div className='group relative'>
