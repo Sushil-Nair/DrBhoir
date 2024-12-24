@@ -2,7 +2,6 @@ import React from 'react'
 import { assets } from '../assets/assets'
 import { NavLink } from 'react-router'
 import { FaArrowRight } from "react-icons/fa";
-import 'animate.css';
 
 const Hero = () => {
   return (
