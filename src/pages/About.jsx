@@ -18,7 +18,7 @@ const About = () => {
       {/* Content Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div>
+          <div className='slide-in-left-t'>
             <h2 className="text-3xl font-semibold mb-6">Our Story</h2>
             <p className="text-gray-600 mb-4">
               In service since 2022, <span className='font-bold text-cta'>Dr. Bhoir Farm & Resort</span> has been a haven of tranquility for travelers seeking an escape from the bustling city life. Our resort combines luxury with nature's beauty to create an unforgettable experience.
@@ -27,7 +27,7 @@ const About = () => {
               Our commitment to excellence and sustainable practices has made us a leading destination for both leisure and business travelers. We take pride in our exceptional service and our dedication to preserving the natural beauty that surrounds us.
             </p>
           </div>
-          <div>
+          <div className='slide-in-bottom-t'>
             <img
               src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
               alt="Resort Overview"
@@ -38,17 +38,17 @@ const About = () => {
 
         {/* Values Section */}
         <div className="mt-16">
-          <h2 className="text-3xl font-semibold mb-8 text-center">Our Values</h2>
+          <h2 className="text-3xl font-semibold mb-8 text-center scale-up-center">Our Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-6 bg-white rounded-lg shadow-md">
+            <div className="text-center p-6 bg-white rounded-lg shadow-md scale-up-center">
               <h3 className="text-xl font-semibold mb-4">Excellence</h3>
               <p className="text-gray-600">We strive for excellence in every aspect of our service, ensuring our guests receive nothing but the best.</p>
             </div>
-            <div className="text-center p-6 bg-white rounded-lg shadow-md">
+            <div className="text-center p-6 bg-white rounded-lg shadow-md scale-up-center">
               <h3 className="text-xl font-semibold mb-4">Sustainability</h3>
               <p className="text-gray-600">We are committed to sustainable practices that protect and preserve our natural environment.</p>
             </div>
-            <div className="text-center p-6 bg-white rounded-lg shadow-md">
+            <div className="text-center p-6 bg-white rounded-lg shadow-md scale-up-center">
               <h3 className="text-xl font-semibold mb-4">Community</h3>
               <p className="text-gray-600">We believe in giving back to our community and creating positive impacts in the lives of others.</p>
             </div>

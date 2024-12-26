@@ -74,37 +74,37 @@ export default function Navbar () {
       {isOpen && (
         <div className="md:hidden">
           <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
-            <NavLink to='/' className={({ isActive }) => 
+            <NavLink onClick={toggleMenu} to='/' className={({ isActive }) => 
               `block px-3 py-2 rounded-md text-base font-medium
               ${isActive ? 'text-green-600' : 'text-gray-700 hover:text-cta'}`
             }>
               Home
             </NavLink>
-            <NavLink to='/about' className={({ isActive }) => 
+            <NavLink onClick={toggleMenu} to='/about' className={({ isActive }) => 
               `block px-3 py-2 rounded-md text-base font-medium
               ${isActive ? 'text-green-600' : 'text-gray-700 hover:text-cta'}`
             }>
               About
             </NavLink>
-            <NavLink to='/accommodation' className={({ isActive }) => 
+            <NavLink onClick={toggleMenu} to='/accommodation' className={({ isActive }) => 
               `block px-3 py-2 rounded-md text-base font-medium
               ${isActive ? 'text-green-600' : 'text-gray-700 hover:text-cta'}`
             }>
               Accommodation
             </NavLink>
-            <NavLink to='/activities' className={({ isActive }) => 
+            <NavLink onClick={toggleMenu} to='/activities' className={({ isActive }) => 
               `block px-3 py-2 rounded-md text-base font-medium
               ${isActive ? 'text-green-600' : 'text-gray-700 hover:text-cta'}`
             }>
               Activities
             </NavLink>
-            <NavLink to='/gallery' className={({ isActive }) => 
+            <NavLink onClick={toggleMenu} to='/gallery' className={({ isActive }) => 
               `block px-3 py-2 rounded-md text-base font-medium
               ${isActive ? 'text-green-600' : 'text-gray-700 hover:text-cta'}`
             }>
               Gallery
             </NavLink>
-            <NavLink to='/contact' className={({ isActive }) => 
+            <NavLink onClick={toggleMenu} to='/contact' className={({ isActive }) => 
               `block px-3 py-2 rounded-md text-base font-medium
               ${isActive ? 'text-green-600' : 'text-gray-700 hover:text-cta'}`
             }>

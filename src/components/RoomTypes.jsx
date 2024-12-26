@@ -67,16 +67,16 @@ export default function RoomTypes() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="relative h-full flex items-center justify-center mb-8">
-          <h1 className="text-xl md:text-3xl font-semibold text-black mb-4">Discover our range of accommodations tailored for every guest</h1>
+          <h1 className="text-xl md:text-3xl font-semibold text-black mb-4 scale-up-center">Discover our range of accommodations tailored for every guest</h1>
         </div>
         {rooms.map((rooms, index) => (
-          <div key={index} className="group relative h-full grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 bg-primary  rounded-2xl overflow-hidden shadow-lg  hover:shadow-xl transition-shadow duration-300">
+          <div key={index} className="group relative h-full grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 bg-primary  rounded-2xl overflow-hidden shadow-lg  hover:shadow-xl transition-shadow duration-300 scale-up-center">
             <img
               src={rooms.imageUrl}
               alt={rooms.title}
-              className='h-full overflow-hidden w-full object-cover hover:scale-105 transition-transform duration-500'
+              className='h-full overflow-hidden w-full object-cover hover:scale-105 transition-transform duration-500 scale-up-center'
             />
-            <div className="p-8 flex flex-col justify-between">
+            <div className="p-8 flex flex-col justify-between scale-up-center">
                  <div className='h-full'>
                     <h2 className="text-2xl font-bold text-gray-800 mb-4">{rooms.title}</h2>
                     <p className="text-gray-600 mb-6 leading-relaxed">{rooms.description}</p>

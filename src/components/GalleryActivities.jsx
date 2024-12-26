@@ -30,13 +30,13 @@ const galleryActs = [
 export default function GalleryActivities() { 
   return (
     <div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-4 py-8">
             <div className="relative h-full flex items-center justify-center">
-                <h1 className="text-xl md:text-2xl font-semibold text-black mb-4">Activities</h1>
+                <h1 className="text-xl md:text-2xl font-semibold text-black mb-4 scale-up-center">Activities</h1>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
               {galleryActs.map((image, index) => (
-                <div key={index} className="group relative">
+                <div key={index} className="group relative scale-up-center">
                   <img
                     src={image.url}
                     alt={image.caption}
@@ -45,10 +45,10 @@ export default function GalleryActivities() {
                   <p className="text-grey-600 text-center py-4 font-semibold">
                     {image.caption}
                   </p>
-                  <hr className='border-none outline-none h-0.5 w-full bg-cta'/>
                 </div>
               ))}
             </div>
+            <hr className='border-none outline-none h-0.5 w-full bg-cta scale-up-center'/>
         </div>
     </div>
   )

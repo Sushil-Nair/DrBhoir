@@ -32,17 +32,17 @@ const images = [
 export default function Gallery_Home_Overview () {
   return (
     <div className='flex flex-col w-full mx-auto px-4 sm:px-6 lg:px-8 bg-primary pb-16 gap-4'>
-        <h3 className="text-2xl font-semibold text-center text-black mb-5">A Glimpse of <span className='text-cta'>Paradise</span></h3>
-        <p className="text-lg md:text-xl mb-3 text-center">Explore the beauty of Dr. Bhoir Farm & Resort through our stunning visuals.</p>
+        <h3 className="text-2xl font-semibold text-center text-black mb-5 scale-up-center">A Glimpse of <span className='text-cta'>Paradise</span></h3>
+        <p className="text-lg md:text-xl mb-3 text-center scale-up-center">Explore the beauty of Dr. Bhoir Farm & Resort through our stunning visuals.</p>
 
-        <Carousel images={images} className="h-[400px]" />
+        <Carousel images={images} className="h-[400px] scale-up-center" />
 
-        <div className='flex flex-col w-full mt-4 group relative gap-10'>
+        <div className='flex flex-col w-full mt-4 group relative gap-10 scale-up-center'>
             <NavLink
                 to="/gallery"
-                className="inline-flex items-center mx-auto bg-cta text-white font-bold px-6 py-3 rounded-lg hover:bg-green-900 transition-transform duration-300 group-hover:scale-105">
+                className="inline-flex items-center mx-auto bg-cta text-white font-bold px-6 py-3 rounded-lg hover:bg-green-900 transition-transform duration-300 group-hover:scale-105 scale-up-center">
                 See All Highlight
-                <FaArrowRight className="ml-2 h-5 w-5" />
+                <FaArrowRight className="ml-2 h-5 w-5 heartbeat" />
             </NavLink>
         </div>
     </div>

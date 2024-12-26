@@ -10,12 +10,12 @@ const ContactInfo = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div>
-            <h2 className="text-3xl font-semibold mb-6">Get in Touch</h2>
-            <p className="text-gray-600 mb-8">
+            <h2 className="text-3xl font-semibold mb-6 scale-up-center">Get in Touch</h2>
+            <p className="text-gray-600 mb-8 scale-up-center">
               We'd love to hear from you. Please fill out the form below or reach out to us using the contact information provided.
             </p>
             
-            <div className="flex flex-col gap-16">
+            <div className="flex flex-col gap-16 scale-up-center">
                 <div className="space-y-4">
                    <div className="flex items-center">
                      <Phone className="h-6 w-6 text-green-600 mr-4" />
@@ -55,7 +55,7 @@ const ContactInfo = () => {
           {/* Contact Form */}
           <div className="bg-white p-8 rounded-lg shadow-md">
             <form>
-              <div className="mb-6">
+              <div className="mb-6 scale-up-center">
                 <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
                   Name
                 </label>
@@ -68,7 +68,7 @@ const ContactInfo = () => {
                 />
               </div>
               
-              <div className="mb-6">
+              <div className="mb-6 scale-up-center">
                 <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
                   Email
                 </label>
@@ -81,7 +81,7 @@ const ContactInfo = () => {
                 />
               </div>
               
-              <div className="mb-6">
+              <div className="mb-6 scale-up-center">
                 <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
                   Message
                 </label>
@@ -96,7 +96,7 @@ const ContactInfo = () => {
               
               <button
                 type="submit"
-                className="w-full bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition-colors"
+                className="w-full bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition-colors scale-up-center"
               >
                 Send Message
               </button>

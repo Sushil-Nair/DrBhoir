@@ -2,16 +2,15 @@ import React from 'react'
 import { FaFacebook, FaInstagramSquare, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { NavLink } from 'react-router';
-import { assets } from '../assets/assets.js';
 
 const Footer = () => {
   return (
     <footer className='bg-gray-900 text-white w-full'>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 w-full">
-          <div className='flex items-center mb-7 w-full'>
+          <div className='flex items-center justify-center mb-7 w-full'>
           <NavLink to='/' className='flex flex-col items-center mb-7 cursor-pointer'>
-            <img className='w-20' src={assets.BW_logo} alt="" />
+            <img className='w-24' src='./footer_logo.png' alt="" />
             <p className='text-xl font-bold'>Dr. Bhoir Farm & Resort</p>
           </NavLink>
         </div>
@@ -20,11 +19,11 @@ const Footer = () => {
             <div className="space-y-3">
               <p className="flex items-start">
                 <FaPhoneAlt className="h-5 w-5 mr-3" />
-                +1 (555) 123-4567
+                <a href="tel:+919769771278">+91-9769771278</a>
               </p>
               <p className="flex items-start">
                 <MdOutlineEmail className="h-5 w-5 mr-3" />
-                info@serenityresort.com
+                <a href="mailto:adityaheritage2023@gmail.com">adityaheritage2023@gmail.com</a>
               </p>
               <p className="flex items-start">
                 <FaMapMarkerAlt className="h-8 w-8 mr-3" />
