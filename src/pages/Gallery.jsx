@@ -6,6 +6,7 @@ import GalleryEvent from '../components/GalleryEvent';
 import GallerySightseeing from '../components/GallerySightseeing';
 import { NavLink } from 'react-router';
 import { FaArrowRight } from "react-icons/fa";
+import TabbedGallery from '../components/TabbedGallery';
 
 const Gallery = () => {
   return (
@@ -22,17 +23,13 @@ const Gallery = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-white">Our Gallery</h1>
         </div>
       </div>
-      
-      <GalleryRooms />
-      <GalleryActivities />
-      <GalleryDine />
-      <GalleryEvent />
-      <GallerySightseeing />
+
+      <TabbedGallery />
 
       <div className='flex flex-col w-full mt-4 group relative gap-10'>
            <NavLink
                to="/contact"
-               className="inline-flex items-center mx-auto bg-cta text-white font-bold px-6 py-3 rounded-lg hover:bg-green-900 transition-transform duration-300 group-hover:scale-105 scale-up-center">
+               className="inline-flex items-center mx-auto bg-cta text-white font-bold px-6 py-3 rounded-lg hover:bg-green-900 transition-transform duration-300 group-hover:scale-105">
                Plan Your Visit
                <FaArrowRight className="ml-2 h-5 w-5" />
            </NavLink>

@@ -19,7 +19,7 @@ const Footer = () => {
             <div className="space-y-3">
               <p className="flex items-start">
                 <FaPhoneAlt className="h-5 w-5 mr-3" />
-                <a href="tel:+919769771278">+91-9769771278</a>
+                <a href="tel:9769771278">+91-9769771278</a>
               </p>
               <p className="flex items-start">
                 <MdOutlineEmail className="h-5 w-5 mr-3" />

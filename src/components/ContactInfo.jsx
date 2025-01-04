@@ -21,7 +21,7 @@ const ContactInfo = () => {
                      <Phone className="h-6 w-6 text-green-600 mr-4" />
                      <div>
                        <h3 className="font-semibold">Phone</h3>
-                       <p className="text-gray-600">+1 (555) 123-4567</p>
+                       <a href="tel:9769771278" className='text-gray-600'>+91-9769771278</a>
                      </div>
                    </div>
                    
@@ -29,7 +29,7 @@ const ContactInfo = () => {
                      <Mail className="h-6 w-6 text-green-600 mr-4" />
                      <div>
                        <h3 className="font-semibold">Email</h3>
-                       <p className="text-gray-600">info@serenityresort.com</p>
+                       <a href="mailto:adityaheritage2023@gmail.com" className='text-gray-600'>adityaheritage2023@gmail.com</a>
                      </div>
                    </div>
                    
@@ -76,6 +76,21 @@ const ContactInfo = () => {
                   type="email"
                   id="email"
                   name="email"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                  required
+                />
+              </div>
+
+              <div className="mb-6 scale-up-center">
+                <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">
+                  Phone Number
+                </label>
+                <input
+                  type="number"
+                  id="phone"
+                  name="phone"
+                  maxLength={10}
+                  minLength={10}
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                   required
                 />

@@ -6,6 +6,12 @@
   @apply block;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   scroll-behavior: smooth;
 }
@@ -40,7 +46,8 @@ body {
 }
 
 .slide-in-bottom-t {
-  -webkit-animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
   animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
@@ -98,8 +105,9 @@ body {
 }
 
 .shake-horizontal {
-  -webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-  animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  -webkit-animation: shake-horizontal 0.8s
+    cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
   animation-timeline: view();
   animation-range: entry 0% cover 50%;
 }
@@ -164,8 +172,8 @@ body {
   }
   50% {
     -webkit-transform: translateY(500px);
-      transform: translateY(500px);
-      opacity: 0.5;
+    transform: translateY(500px);
+    opacity: 0.5;
   }
 
   100% {
@@ -181,12 +189,11 @@ body {
     opacity: 0;
   }
 
-    50% {
-      -webkit-transform: translateY(500px);
-      transform: translateY(500px);
-      opacity: 0.5;
-    }
-
+  50% {
+    -webkit-transform: translateY(500px);
+    transform: translateY(500px);
+    opacity: 0.5;
+  }
 
   100% {
     -webkit-transform: translateY(0);
@@ -515,7 +522,6 @@ body {
 /* shake-horizontal */
 
 @-webkit-keyframes shake-horizontal {
-
   0%,
   100% {
     -webkit-transform: translateX(0);
@@ -549,7 +555,6 @@ body {
 }
 
 @keyframes shake-horizontal {
-
   0%,
   100% {
     -webkit-transform: translateX(0);
