@@ -10,10 +10,12 @@ import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
 import Footer from './components/Footer';
 import BackToTopButton from './utilities/BackToTop';
+import MetadataManager from './components/MetaDataManager';
 
 const App = () => {
   return (
     <div>
+      <MetadataManager>
       <ScrollToTop />
       <Navbar />
 
@@ -29,6 +31,7 @@ const App = () => {
       <BackToTopButton />
 
       <Footer />
+      </MetadataManager>
     </div>
   )
 }

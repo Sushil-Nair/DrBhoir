@@ -11,48 +11,48 @@ export default function Navbar () {
   return (
     <nav className='bg-primary shadow-lg fixed w-full z-50'>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+        <div className="flex justify-between h-20">
             <div className="flex items-center">
               <NavLink to='/' className='flex items-center gap-2'>
-               <img className='w-16 min-w-8 h-auto rounded-full cursor-pointer' src={assets.logo} alt="logo" />
-               <span className='text-center font-medium text-lg cursor-pointer hover:text-cta'>Dr. Bhoir Farm & Resort</span>
+               <img className='flex w-16 min-w-8 h-auto rounded-full cursor-pointer' src={assets.logo} alt="logo" />
+               <span className='flex text-center font-medium lg:text-xl cursor-pointer hover:text-cta'>Dr. Bhoir Farm & Resort</span>
               </NavLink>
             </div>
       
                 {/* Desktop Links */}
             <div className='hidden md:flex items-center gap-4 px-2'>
                   <NavLink to='/' className={({ isActive }) => 
-              `block px-2 py-2 rounded-md text-sm font-medium
+              `block px-2 py-2 rounded-md text-sm lg:text-base font-medium
               ${isActive ? 'text-green-600' : 'text-gray-700 hover:text-cta'}`
             }>
               Home
             </NavLink>
             <NavLink to='/about' className={({ isActive }) => 
-              `block px-2 py-2 rounded-md text-sm font-medium
+              `block px-2 py-2 rounded-md text-sm lg:text-base font-medium
               ${isActive ? 'text-green-600' : 'text-gray-700 hover:text-cta'}`
             }>
               About
             </NavLink>
             <NavLink to='/accommodation' className={({ isActive }) => 
-              `block px-2 py-2 rounded-md text-sm font-medium
+              `block px-2 py-2 rounded-md text-sm lg:text-base font-medium
               ${isActive ? 'text-green-600' : 'text-gray-700 hover:text-cta'}`
             }>
               Accommodation
             </NavLink>
             <NavLink to='/activities' className={({ isActive }) => 
-              `block px-2 py-2 rounded-md text-sm font-medium
+              `block px-2 py-2 rounded-md text-sm lg:text-base font-medium
               ${isActive ? 'text-green-600' : 'text-gray-700 hover:text-cta'}`
             }>
               Activities
             </NavLink>
             <NavLink to='/gallery' className={({ isActive }) => 
-              `block px-2 py-2 rounded-md text-sm font-medium
+              `block px-2 py-2 rounded-md text-sm lg:text-base font-medium
               ${isActive ? 'text-green-600' : 'text-gray-700 hover:text-cta'}`
             }>
               Gallery
             </NavLink>
             <NavLink to='/contact' className={({ isActive }) => 
-              `block px-2 py-2 rounded-md text-sm font-medium
+              `block px-2 py-2 rounded-md text-sm lg:text-base font-medium
               ${isActive ? 'text-green-600' : 'text-gray-700 hover:text-cta'}`
             }>
               Contact

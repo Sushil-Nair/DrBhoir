@@ -15,36 +15,36 @@ const PropertyRules = () => {
             <div className='flex flex-col pt-4 pb-8 px-4 gap-3'>
                 <h4 className="text-lg md:text-xl font-semibold text-center text-black mb-2">Somethings To Remember</h4>
                 <div className='flex items-center gap-4'>
-                    <TiTick />
-                    <p className='text-xs md:text-sm lg:text-base'>Entry and exit timings are from 10:00 AM to 11:00 AM</p>
+                    <span className='bg-black border-[3px] rounded-full border-black'> </span>
+                    <p className='text-sm md:text-base lg:text-lg'>Entry and exit timings are from 10:00 AM to 11:00 AM</p>
                 </div>
                 <div className='flex items-center gap-4'>
-                    <TiTick />
-                    <p className='text-xs md:text-sm lg:text-base'>Kindly submit the ID proof (Any Government Approved) at the time of Check-In.</p>
+                    <span className='bg-black border-[3px] rounded-full border-black'> </span>
+                    <p className='text-sm md:text-base lg:text-lg'>Kindly submit the ID proof (Any Government Approved) at the time of Check-In.</p>
                 </div>
                 <div className='flex items-center gap-4'>
-                    <TiTick />
-                    <p className='text-xs md:text-sm lg:text-base'>Kindly Carry Proper Swimming Costume to Use the Swimming Pool.</p>
+                    <span className='bg-black border-[3px] rounded-full border-black'> </span>
+                    <p className='text-sm md:text-base lg:text-lg'>Kindly Carry Proper Swimming Costume to Use the Swimming Pool.</p>
                 </div>
                 <div className='flex items-center gap-4'>
-                    <TiTick />
-                    <p className='text-xs md:text-sm lg:text-base'>Drinks are not allowed in pool (separate sitting is available near pool Deck)</p>
+                    <span className='bg-black border-[3px] rounded-full border-black'> </span>
+                    <p className='text-sm md:text-base lg:text-lg'>Drinks are not allowed in pool (separate sitting is available near pool Deck)</p>
                 </div>
                 <div className='flex items-center gap-4'>
-                    <TiTick />
-                    <p className='text-xs md:text-sm lg:text-base'>Any guest for dinner and lunch purpose will have to pay table charge.</p>
+                    <span className='bg-black border-[3px] rounded-full border-black'> </span>
+                    <p className='text-sm md:text-base lg:text-lg'>Any guest for dinner and lunch purpose will have to pay table charge.</p>
                 </div>
                 <div className='flex items-center gap-4'>
-                    <TiTick />
-                    <p className='text-xs md:text-sm lg:text-base'>Pool close time 12 AM to 07 AM.</p>
+                    <span className='bg-black border-[3px] rounded-full border-black'> </span>
+                    <p className='text-sm md:text-base lg:text-lg'>Pool close time 12 AM to 07 AM.</p>
                 </div>
                 <div className='flex items-center gap-4'>
-                    <TiTick />
-                    <p className='text-xs md:text-sm lg:text-base'>Pets not allowed.</p>
+                    <span className='bg-black border-[3px] rounded-full border-black'> </span>
+                    <p className='text-sm md:text-base lg:text-lg'>Pets not allowed.</p>
                 </div>
                 <div className='flex items-center gap-4'>
-                    <TiTick />
-                    <p className='text-xs md:text-sm lg:text-base'>Unmarried couples are not allowed.</p>
+                    <span className='bg-black border-[3px] rounded-full border-black'> </span>
+                    <p className='text-sm md:text-base lg:text-lg'>Unmarried couples are not allowed.</p>
                 </div>
                 
             </div>

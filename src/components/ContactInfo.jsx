@@ -1,10 +1,52 @@
 import React from 'react'
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
+import { useState } from 'react';
 
 const ContactInfo = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+  });
+
+  const [submitStatus, setSubmitStatus] = useState({ loading: false, error: null, success: false });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSubmitStatus({ loading: true, error: null, success: false });
+
+    try {
+  await fetch('https://script.google.com/macros/s/AKfycbzv_WzCBxl0-o5D410BdcHA_pB5HRId3hw0fg6Nu10pnbN7An1j4aSJ6dFDzIcvVjAX/exec', {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      ...formData,
+      timestamp: new Date().toLocaleString(),
+    }),
+  });
+  
+  // Since we can't read the response with no-cors, assume success if the fetch doesn't throw
+  setSubmitStatus({ loading: false, error: null, success: true });
+  setFormData({ name: '', email: '', phone: '', message: '' });
+  } catch (error) {
+  setSubmitStatus({ loading: false, error: 'Failed to submit form', success: false });
+  }
+};
+
   return (
-    <div className="pt-16">
+    <div className="pt-16 bg-primary">
       {/* Contact Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -54,69 +96,98 @@ const ContactInfo = () => {
 
           {/* Contact Form */}
           <div className="bg-white p-8 rounded-lg shadow-md">
-            <form>
-              <div className="mb-6 scale-up-center">
-                <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                  required
-                />
-              </div>
-              
-              <div className="mb-6 scale-up-center">
-                <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                  required
-                />
-              </div>
+            {submitStatus.success && (
+            <div className="mb-6 p-4 bg-green-100 text-green-700 rounded-md">
+              Thank you for your inquiry! We'll get back to you soon.
+            </div>
+          )}
 
-              <div className="mb-6 scale-up-center">
-                <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">
-                  Phone Number
-                </label>
-                <input
-                  type="number"
-                  id="phone"
-                  name="phone"
-                  maxLength={10}
-                  minLength={10}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                  required
-                />
-              </div>
-              
-              <div className="mb-6 scale-up-center">
-                <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={4}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                  required
-                ></textarea>
-              </div>
-              
-              <button
-                type="submit"
-                className="w-full bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition-colors scale-up-center"
-              >
-                Send Message
-              </button>
-            </form>
+          {submitStatus.error && (
+            <div className="mb-6 p-4 bg-red-100 text-red-700 rounded-md">
+              {submitStatus.error}
+            </div>
+          )}
+          
+      <form onSubmit={handleSubmit}>
+        <div className="mb-6 scale-up-center">
+          <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
+            Name
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+            required
+          />
+        </div>
+        
+        <div className="mb-6 scale-up-center">
+          <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+            required
+          />
+        </div>
+
+        <div className="mb-6 scale-up-center">
+          <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">
+            Phone Number
+          </label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            pattern="[0-9]{10}"
+            maxLength={10}
+            minLength={10}
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+            required
+          />
+        </div>
+        
+        <div className="mb-6 scale-up-center">
+          <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            rows={4}
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+          ></textarea>
+        </div>
+
+        {submitStatus.message && (
+          <div className={`mb-4 p-3 rounded ${
+            submitStatus.type === 'success' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'
+          }`}>
+            {submitStatus.message}
           </div>
+        )}
+        
+        <button
+          type="submit"
+          disabled={submitStatus.loading}
+          className="w-full bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition-colors disabled:opacity-50"
+        >
+          {submitStatus.loading ? 'Sending...' : 'Send Message'}
+        </button>
+      </form>
+    </div>
         </div>
       </div>
     </div>

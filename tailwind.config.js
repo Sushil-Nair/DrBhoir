@@ -4,17 +4,16 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {
-    // screens: {
-    //     'nd': '913px'
-    //   },
-      
+  theme: {      
     extend: {
       colors:{
         'cta': '#016F80',
         'primary': '#F8F8F8',
         'fb': '#4267B2',
         'insta': '#C13584'
+      },
+      screens: {
+        'md': '835px'
       }
     },
   },

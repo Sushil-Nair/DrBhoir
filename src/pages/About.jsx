@@ -21,7 +21,10 @@ const About = () => {
           <div className='slide-in-left-t'>
             <h2 className="text-3xl font-semibold mb-6">Our Story</h2>
             <p className="text-gray-600 mb-4">
-              In service since 2022, <span className='font-bold text-cta'>Dr. Bhoir Farm & Resort</span> has been a haven of tranquility for travelers seeking an escape from the bustling city life. Our resort combines luxury with nature's beauty to create an unforgettable experience.
+              Welcome to <span className='font-bold text-cta'>Dr. Bhoir Farm & Resort</span>, your premier destination for a serene and luxurious getaway in the heart of the Kalyan - Badlapur region.
+            </p>
+            <p className="text-gray-600 mb-4">
+              In service since 2022, Dr. Bhoir Farm & Resort has been a haven of tranquility for travelers seeking an escape from the bustling city life. Our resort combines luxury with nature's beauty to create an unforgettable experience.
             </p>
             <p className="text-gray-600 mb-4">
               Our commitment to excellence and sustainable practices has made us a leading destination for both leisure and business travelers. We take pride in our exceptional service and our dedication to preserving the natural beauty that surrounds us.
@@ -33,6 +36,40 @@ const About = () => {
               alt="Resort Overview"
               className="rounded-lg shadow-lg"
             />
+          </div>
+        </div>
+
+        {/* Our Offerings */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-16 items-start">
+          <div className='scale-up-center order-2 sm:order-1'>
+            <img
+              src="https://www.hotelswithprivatepool.com/Images/hotels-private-pool-phuket-anantara-layan-phuket-resort.jpg"
+              alt="Resort Overview"
+              className="rounded-lg shadow-lg"
+            />
+          </div>
+          <div className='scale-up-center order-1 sm:order-2'>
+            <h2 className="text-3xl font-semibold mb-8">Our Offerings</h2>
+            <div className='flex items-start gap-4 mb-8'>
+              <span className='bg-black border-[3px] rounded-full border-black'> </span>
+              <p className='text-gray-600 mt-[-12px]'><span className='font-bold'>Luxurious Accommodations:</span> Our well-appointed rooms and cottages provide a comfortable stay with modern amenities.</p>
+            </div>
+            <div className='flex items-start gap-4 mb-8'>
+              <span className='bg-black border-[3px] rounded-full border-black'> </span>
+              <p className='text-gray-600 mt-[-12px]'><span className='font-bold'>Private Pool Villas:</span> Experience exclusivity with our private pool villas, perfect for intimate gatherings and relaxation.</p>
+            </div>
+            <div className='flex items-start gap-4 mb-8'>
+              <span className='bg-black border-[3px] rounded-full border-black'> </span>
+              <p className='text-gray-600 mt-[-12px]'><span className='font-bold'>Family-Friendly Environment:</span> With spacious grounds and recreational activities, we cater to guests of all ages.</p>
+            </div>
+            <div className='flex items-start gap-4 mb-8'>
+              <span className='bg-black border-[3px] rounded-full border-black'> </span>
+              <p className='text-gray-600 mt-[-12px]'><span className='font-bold'>Proximity to Attractions:</span> Conveniently located near popular tourist spots in Kalyan, Badlapur, and Ambarnath, making it easy for you to explore the region.</p>
+            </div>
+            <div className='flex items-start gap-4 mb-8'>
+              <span className='bg-black border-[3px] rounded-full border-black'> </span>
+              <p className='text-gray-600 mt-[-12px]'><span className='font-bold'>Culinary Experiences:</span> Savor authentic Maharashtrian cuisine prepared with fresh, locally sourced ingredients. The resort's restaurant offers a variety of dishes catering to diverse palates.</p>
+            </div>
           </div>
         </div>
 

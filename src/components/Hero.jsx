@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className='pt-16'>
       <div 
-         className="relative h-[100vh] bg-cover bg-center"
+         className="relative h-[93vh] bg-cover bg-center"
          style={{
           backgroundImage: `url(${assets.Hero_AI})`}}>
           <div className="absolute inset-0 bg-black bg-opacity-50" />
@@ -15,20 +15,20 @@ const Hero = () => {
              <div className="text-center text-white px-4 slide-in-left-t">
                  <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to Dr. Bhoir Farm & Resort</h1>
                 
-                 <p className="text-xl md:text-2xl mb-8">Experience luxury in the heart of nature</p>
-                 <div className='flex gap-4 justify-center items-center'>
+                 <p className="text-xl md:text-2xl mb-8">Experience luxury in the heart of nature at the best Farm Resort in Kalyan</p>
+                 <div className='flex flex-col sm:flex-row gap-4 justify-center items-center'>
                   <div className='group relative'>
                      <NavLink
                          to="/about"
-                         className="inline-flex items-center h-[50px] bg-gray-950/30 border-2 border-cta text-white font-bold px-6 py-3 rounded-lg hover:bg-cta transition-transform duration-300 group-hover:scale-105">
+                         className="inline-flex items-center justify-center text-nowrap w-[190px] sm:w-auto h-[50px] bg-gray-950/30 border-2 border-cta text-white text-base font-bold px-6 py-3 rounded-lg hover:bg-cta transition-transform duration-300 group-hover:scale-105">
                          Know More
-                         <FaArrowRight className="ml-2 h-5 w-5 heartbeat" />
+                         <FaArrowRight className="ml-2 h-5 w-5" />
                      </NavLink>
                   </div>
                   <div className='group relative'>
                      <NavLink
                          to="/contact"
-                         className="inline-flex items-center h-[50px] bg-cta text-white font-bold px-6 py-3 rounded-lg hover:bg-green-900 transition-transform duration-300 group-hover:scale-105">
+                         className="inline-flex items-center text-nowrap h-[50px] bg-cta text-white text-base font-bold px-6 py-3 rounded-lg hover:bg-green-900 transition-transform duration-300 group-hover:scale-105">
                          Book Your Stay
                          <FaArrowRight className="ml-2 h-5 w-5" />
                      </NavLink>

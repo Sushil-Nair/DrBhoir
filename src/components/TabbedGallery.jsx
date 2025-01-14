@@ -6,12 +6,17 @@ const TabbedGallery = () => {
       id: 'accommodation',
       title: 'Accommodation',
       images: [
-        { id: 1, src: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', caption: 'Luxury Room' },
-        { id: 2, src: './Swimming pool.jpg', caption: 'Pool View' },
+        { id: 1, src: './location/br.png', caption: 'Bed Room' },
+        { id: 2, src: './location/br1.png', caption: 'Bed Room' },
         { id: 3, src: './villa.png', caption: 'Cozy Stays Crafted Just for You.' },
-        { id: 4, src: './outdoor activities.jpg', caption: 'Outdoor Activity' },
-        { id: 5, src: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', caption: 'Garden View' },
-        { id: 6, src: '/Poolside.jpg', caption: 'Poolside' }
+        { id: 4, src: './location/br2.png', caption: 'Bed Room' },
+        { id: 5, src: './location/br3.png', caption: 'Bed Room' },
+        { id: 6, src: './location/entrance.png', caption: 'Entrance' },
+        { id: 7, src: './location/room1.png', caption: 'Room' },
+        { id: 8, src: './location/stairs.png', caption: 'Stairs' },
+        { id: 9, src: './location/nature1.png', caption: 'Surrounding' },
+        { id: 10, src: './location/nature2.png', caption: 'Surrounding' },
+        { id: 11, src: './location/nature3.png', caption: 'Surrounding' },
       ]
     },
     {
@@ -26,33 +31,32 @@ const TabbedGallery = () => {
         { id: 6, src: './activities/activities5c.png', caption: 'Pool' },
         { id: 7, src: './activities/activities6c.png', caption: 'Pool' },
         { id: 8, src: './activities/activities7c.png', caption: 'Pool' },
-        { id: 9, src: './activities/activities8c.png', caption: 'Pool' }
+        { id: 9, src: './activities/activities8c.png', caption: 'Pool' },
+        { id: 10, src: './activities/activities9c.png', caption: 'Pool' },
+        { id:11, src: './activities/activities10c.png', caption: 'Pool' }
       ]
     },
     {
       id: 'dining',
       title: 'Dining',
       images: [
-        { id: 1, src: './dine/dine1c.png', caption: 'Pool View' },
-        { id: 2, src: './villa.png', caption: 'Cozy Stays Crafted Just for You.' },
-        { id: 3, src: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', caption: 'Luxury Room' },
-        { id: 4, src: './outdoor activities.jpg', caption: 'Outdoor Activity' },
-        { id: 5, src: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', caption: 'Garden View' },
-        { id: 6, src: '/Poolside.jpg', caption: 'Poolside' }
+        { id: 1, src: './dine/dine1c.png', caption: 'Dining' },
+        { id: 2, src: './dine/dine2c.png', caption: 'Dining' },
+        { id: 3, src: './dine/dine3c.png', caption: 'Dining' }
       ]
     },
-    {
-      id: 'events',
-      title: 'Events',
-      images: [
-        { id: 1, src: './Swimming pool.jpg', caption: 'Pool View' },
-        { id: 2, src: './villa.png', caption: 'Cozy Stays Crafted Just for You.' },
-        { id: 3, src: './outdoor activities.jpg', caption: 'Outdoor Activity' },
-        { id: 4, src: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', caption: 'Luxury Room' },
-        { id: 5, src: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', caption: 'Garden View' },
-        { id: 6, src: '/Poolside.jpg', caption: 'Poolside' }
-      ]
-    }
+    // {
+    //   id: 'events',
+    //   title: 'Events',
+    //   images: [
+    //     { id: 1, src: './Swimming pool.jpg', caption: 'Pool View' },
+    //     { id: 2, src: './villa.png', caption: 'Cozy Stays Crafted Just for You.' },
+    //     { id: 3, src: './outdoor activities.jpg', caption: 'Outdoor Activity' },
+    //     { id: 4, src: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', caption: 'Luxury Room' },
+    //     { id: 5, src: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', caption: 'Garden View' },
+    //     { id: 6, src: '/Poolside.jpg', caption: 'Poolside' }
+    //   ]
+    // }
   ];
 
   const [activeSection, setActiveSection] = useState(gallerySections[0].id);
