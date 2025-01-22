@@ -1,4 +1,7 @@
 import React from 'react'
+import { FaArrowCircleRight } from 'react-icons/fa'
+import { FaPhone } from 'react-icons/fa6'
+import DirectContact from '../components/DirectContact'
 
 const About = () => {
   return (
@@ -21,7 +24,7 @@ const About = () => {
           <div className='slide-in-left-t'>
             <h2 className="text-3xl font-semibold mb-6">Our Story</h2>
             <p className="text-gray-600 mb-4">
-              Welcome to <span className='font-bold text-cta'>Dr. Bhoir Farm & Resort</span>, your premier destination for a serene and luxurious getaway in the heart of the Kalyan - Badlapur region.
+              Welcome to <span className='font-bold text-cta'>Dr. Bhoir Farm & Resort</span>, your premier destination for a serene and luxurious getaway in the heart of the Kalyan - Badlapur region. Our farmhouse resort is conveniently accessible from Mumbai, Thane, and Navi Mumbai.
             </p>
             <p className="text-gray-600 mb-4">
               In service since 2022, Dr. Bhoir Farm & Resort has been a haven of tranquility for travelers seeking an escape from the bustling city life. Our resort combines luxury with nature's beauty to create an unforgettable experience.
@@ -91,6 +94,9 @@ const About = () => {
             </div>
           </div>
         </div>
+
+        {/* Direct Contact */}
+        <DirectContact />
       </div>
     </div>
   )

@@ -1,7 +1,7 @@
 import React from 'react'
-import WhatsAppInquiry from '../components/WhatsAppInquiry'
-import ContactDetails from '../components/ContactDetails'
-import ContactInfo from '../components/ContactInfo'
+import WhatsAppInquiry from '../components/contact/WhatsAppInquiry'
+import ContactDetails from '../components/contact/ContactDetails'
+import ContactInfo from '../components/contact/ContactInfo'
 
 const Contact = () => {
   return (

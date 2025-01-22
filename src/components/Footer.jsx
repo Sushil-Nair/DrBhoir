@@ -69,7 +69,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p>&copy; {new Date().getFullYear()} Dr. Bhoir Farm & Resort. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Dr. Bhoir Farm & Resort. All rights reserved. Developed by Digital Crafts</p>
         </div>
       </div>
     </footer>

@@ -8,12 +8,12 @@ const Accoms = [
       caption: 'Cozy and intimate spaces, perfect for a romantic escape.'
     },
     {
-      url: './familycottage.png',
-      title: 'Family Cottages',
+      url: './location/6-bedG.png',
+      title: 'Six-Bedroom Homes',
       caption: 'Spacious and comfortable, ideal for families.'
     },
     {
-      url: './fivebed.png',
+      url: './location/5-bed roomG.png',
       title: 'Five-Bedroom Homes',
       caption: 'Lavish living with premium amenities for groups.'
     },
@@ -57,7 +57,7 @@ const AccomsCarousel = () => {
   };
 
   return (
-    <div className="relative sm:hidden w-full max-w-4xl mx-auto overflow-hidden rounded-lg shadow-lg scale-up-center">
+    <div className="relative sm:hidden w-full h-[300px] max-w-4xl mx-auto overflow-hidden rounded-lg shadow-lg scale-up-center">
       <div 
         className="relative h-96"
         onMouseEnter={() => setIsAutoPlaying(false)}
@@ -71,9 +71,9 @@ const AccomsCarousel = () => {
             className="w-full h-full object-cover"
           />
           {/* Caption Overlay */}
-          <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
+          <div className="absolute bottom-20 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
             <h3 className="text-xl font-bold mb-2">{Accoms[currentIndex].title}</h3>
-            <p className="text-sm">{Accoms[currentIndex].caption}</p>
+            {/* <p className="text-sm">{Accoms[currentIndex].caption}</p> */}
           </div>
         </div>
 
@@ -92,7 +92,7 @@ const AccomsCarousel = () => {
         </button>
 
         {/* Dot Indicators */}
-        <div className="absolute bottom-20 left-0 right-0 flex justify-center gap-2">
+        <div className="absolute bottom-[90px] left-0 right-0 flex justify-center gap-2">
           {Accoms.map((_, index) => (
             <button
               key={index}

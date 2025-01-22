@@ -4,7 +4,7 @@ import { assets } from '../../assets/assets';
 
 const Feature = [
   {
-    url: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    url: './location/villaG.png',
     title: 'Luxury Accommodation',
     caption: 'Experience comfort in our beautifully designed rooms and suites.'
   },
@@ -27,6 +27,16 @@ const Feature = [
     url: './outdoor activities.jpg',
     title: 'Outdoor Games',
     caption: 'Play. Explore. Unwind!'
+  },
+  {
+    url: './activities/raindanceG.png',
+    title: 'Raindance and Mushroom',
+    caption: "Delight in our exhilarating rain dance area, featuring a vibrant mushroom waterfall, perfect for guests of all ages."
+  },
+  {
+    url: './activities/children parkG.png',
+    title: 'Children Park',
+    caption: "A dedicated children's park equipped with engaging play structures, ensuring endless fun and adventure for your little ones."
   },
   {
     url: './Swimming pool.jpg',
@@ -88,7 +98,7 @@ const FeatureCarousel = () => {
   };
 
   return (
-    <div className="relative w-full h-auto max-w-4xl mx-auto overflow-hidden rounded-lg shadow-lg">
+    <div className="relative w-full h-[300px] max-w-4xl mx-auto overflow-hidden rounded-lg shadow-lg">
       <div 
         className="relative h-96"
         onMouseEnter={() => setIsAutoPlaying(false)}
@@ -102,9 +112,9 @@ const FeatureCarousel = () => {
             className="w-full h-full object-cover"
           />
           {/* Caption Overlay */}
-          <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
+          <div className="absolute bottom-20 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
             <h3 className="text-xl font-bold mb-2">{Feature[currentIndex].title}</h3>
-            <p className="text-sm">{Feature[currentIndex].caption}</p>
+            {/* <p className="text-sm">{Feature[currentIndex].caption}</p> */}
           </div>
         </div>
 
@@ -123,7 +133,7 @@ const FeatureCarousel = () => {
         </button>
 
         {/* Dot Indicators */}
-        <div className="absolute bottom-20 left-0 right-0 flex justify-center gap-2">
+        <div className="absolute bottom-[90px] left-0 right-0 flex justify-center gap-2">
           {Feature.map((_, index) => (
             <button
               key={index}

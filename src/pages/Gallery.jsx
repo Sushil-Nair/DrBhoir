@@ -1,11 +1,6 @@
 import React from 'react'
-import GalleryRooms from '../components/GalleryRooms';
-import GalleryActivities from '../components/GalleryActivities';
-import GalleryDine from '../components/GalleryDine';
-import GalleryEvent from '../components/GalleryEvent';
-import GallerySightseeing from '../components/GallerySightseeing';
 import { NavLink } from 'react-router';
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaInstagramSquare } from "react-icons/fa";
 import TabbedGallery from '../components/TabbedGallery';
 
 const Gallery = () => {
@@ -34,6 +29,16 @@ const Gallery = () => {
                <FaArrowRight className="ml-2 h-5 w-5" />
            </NavLink>
            <hr className='border-none outline-none h-0.5 w-full bg-cta'/>
+      </div>
+
+      <div className='flex flex-col sm:flex-row items-center justify-between max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gap-4 py-8 h-full'>
+        <h2 className='font-semibold text-lg'>Discover more moments and updates on our Instagram page.</h2>
+        <button className='border-2 border-insta rounded-lg p-2 bg-insta hover:bg-opacity-90'> 
+          <a href="https://www.instagram.com/drbhoirfarm/" target='_blank' className='flex items-center justify-center gap-2'>
+             <FaInstagramSquare className='text-white' />
+             <p className='text-white font-semibold'>Follow us on Instagram</p>
+          </a>
+        </button>
       </div>
     </div>
   );

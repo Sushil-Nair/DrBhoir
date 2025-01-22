@@ -2,7 +2,7 @@ import { createContext, useContext, useState, useEffect } from 'react';
 
 const CarouselContext = createContext();
 
-export function CarouselProvider({ children, images, autoSlideInterval = 2000 }) {
+export function CarouselProvider({ children, images, autoSlideInterval = 3000 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
 
