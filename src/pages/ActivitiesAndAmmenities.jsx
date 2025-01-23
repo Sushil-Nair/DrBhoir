@@ -7,22 +7,22 @@ const ActivitiesAndAmmenities = () => {
     {
       name: "Durgadi Fort",
       desc: "A historic fort featuring a temple dedicated to Goddess Durga, offering insights into the region's rich heritage.",
-      image: "./sightseeing/durgadifort.png",
+      image: "./activities/ssDurgadifortO.webp",
     },
     {
       name: "Titwala Ganpati Mandir",
       desc: "A revered temple dedicated to Lord Ganesha, attracting numerous devotees and tourists year-round. The temple is believed to be the site of the hermitage of sage Kanva and holds significant religious importance.",
-      image: "./sightseeing/titwala ganesh mandirG.png",
+      image: "./activities/ssTitwala_ganesh_mandirO.webp",
     },
     {
       name: "Malshej Ghat",
       desc: "A picturesque mountain pass known for its scenic beauty, waterfalls, and trekking opportunities. It's a popular destination for nature enthusiasts and adventure seekers.",
-      image: "./sightseeing/malshej ghatG.png",
+      image: "./activities/ssMalshejghatO.webp",
     },
     {
       name: "Kala Talao",
       desc: "A scenic lake located in the center of Kalyan city, popular for recreational activities and boating. It's a great spot for relaxation and family outings.",
-      image: "./sightseeing/kala talao.png",
+      image: "./activities/ssKalatalaoO.webp",
     }
   ];
   return (
@@ -31,7 +31,7 @@ const ActivitiesAndAmmenities = () => {
       <div 
         className="relative h-[40vh] bg-cover bg-bottom"
         style={{
-          backgroundImage: 'url("./Swimming pool.jpg")'
+          backgroundImage: 'url("./homePage/hero/hero4O.webp")'
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50" />

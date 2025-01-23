@@ -4,94 +4,90 @@ import { FaArrowRight } from "react-icons/fa";
 
 const activities = [
   {
-    url: './Swimming pool.jpg',
+    url: './activities/activitiesSwimmingPoolO.webp',
     caption: 'Swimming Pool'
   },
   {
-    url: './activities/Rain Dance G.png',
-    caption: 'Rain Dance'
-  },
-  {
-    url: 'https://plus.unsplash.com/premium_photo-1664302012799-8da4258711a3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    url: './activities/activitiesPoolTableO.webp',
     caption: 'Pool Table'
   },
   {
-    url: './activities/TTG.png',
+    url: './activities/activitiesTTO.webp',
     caption: 'Table Tennis'
   },
   {
-    url: './activities/cricketG.png',
+    url: './activities/activitiesCricketO.webp',
     caption: 'Cricket'
   },
   {
-    url: 'https://plus.unsplash.com/premium_photo-1733288427325-f43bc7f0e758?q=80&w=2831&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    url: './activities/activitiesFootballO.webp',
     caption: 'Football'
   },
   {
-    url: './activities/volleyballG.png',
+    url: './activities/activitiesVolleyballO.webp',
     caption: 'Volleyball'
   },
   {
-    url: './activities/badmintonG.png',
+    url: './activities/activitiesbadmintonO.webp',
     caption: 'Badminton'
   },
   {
-    url: './activities/children parkG.png',
+    url: './activities/activitiesChildrenParkO.webp',
     caption: 'Kids Play Area'
   },
-   {
-    url: './activities/trampolineG.png',
+  {
+    url: './activities/activitiesTrampolineO.webp',
     caption: 'Trampoline'
   },
   {
-    url: './activities/BonfireG.png',
+    url: './activities/activitiesRainDanceO.webp',
+    caption: 'Rain Dance'
+  },
+  {
+    url: './activities/activitiesBonfireO.webp',
     caption: 'Bonfire'
   },
   {
-    url: './activities/BBQG.png',
+    url: './activities/activitiesBBQO.webp',
     caption: 'BBQ'
   },
   {
-    url: './activities/openlawnG.png',
+    url: './activities/activitiesOpenlawnO.webp',
     caption: 'Open Lawn'
   }
 ]; 
 
 const events = [
   {
-    url: './activities/social.png',
+    url: './activities/activitiesReunionO.webp',
     caption: 'Reunions'
   },
   {
-    url: 'https://images.unsplash.com/photo-1598238179116-ec3c4c0f7a29?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    url: './activities/activitiesAnniversaryO.webp',
     caption: 'Anniversary'
   },
   {
-    url: 'https://images.unsplash.com/photo-1728024450639-dc1b6183dbf2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    url: './activities/activitiesBirthdayO.webp',
     caption: 'Birthday'
   },
   {
-    url: 'https://images.unsplash.com/photo-1670745088092-c8357f5b72c1?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    url: './activities/activitiesChristmasO.webp',
     caption: 'Christmas Party'
   },
   {
-    url: 'https://images.unsplash.com/photo-1608870229932-cec85e0390ee?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    url: './activities/activitiesNewYearO.webp',
     caption: 'New Year Celebration'
   },
   {
-    url: 'https://images.unsplash.com/photo-1671531906046-2c0873857bbf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    caption: 'Pre Wedding Shoot'
-  },
-  {
-    url: './activities/social.png',
+    url: './activities/activitiesSocialO.webp',
     caption: 'Social Events'
   },
   {
-    url: 'https://plus.unsplash.com/premium_photo-1681210072502-4102a6059bb8?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    url: './activities/activitiesFamilyOutingO.webp',
     caption: 'Family Outings'
   },
   {
-    url: 'https://images.unsplash.com/photo-1700788629800-ad3a0b202054?q=80&w=2978&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    url: './activities/activitiesDiwaliO.webp',
     caption: 'Diwali Celebrations'
   }
 ];

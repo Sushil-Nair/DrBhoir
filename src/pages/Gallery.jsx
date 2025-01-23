@@ -10,7 +10,7 @@ const Gallery = () => {
       <div 
         className="relative h-[40vh] bg-cover bg-center"
         style={{
-          backgroundImage: 'url("./Swimming pool.jpg")'
+          backgroundImage: 'url("./gallery/galleryTitleO.webp")'
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50" />
@@ -32,7 +32,7 @@ const Gallery = () => {
       </div>
 
       <div className='flex flex-col sm:flex-row items-center justify-between max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gap-4 py-8 h-full'>
-        <h2 className='font-semibold text-lg'>Discover more moments and updates on our Instagram page.</h2>
+        <h2 className='font-semibold text-lg text-center'>Discover more moments and updates on our Instagram page.</h2>
         <button className='border-2 border-insta rounded-lg p-2 bg-insta hover:bg-opacity-90'> 
           <a href="https://www.instagram.com/drbhoirfarm/" target='_blank' className='flex items-center justify-center gap-2'>
              <FaInstagramSquare className='text-white' />

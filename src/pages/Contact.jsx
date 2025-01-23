@@ -10,7 +10,7 @@ const Contact = () => {
       <div 
         className="relative h-[40vh] bg-cover bg-center"
         style={{
-          backgroundImage: 'url("./ContactUs.jpg")'
+          backgroundImage: 'url("./ContactUs.webp")'
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50" />

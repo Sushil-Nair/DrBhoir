@@ -5,28 +5,28 @@ import { FaArrowRight } from "react-icons/fa";
 
 const images = [
   {
-    url: './adityaheritageG.png',
-    caption: 'Luxury Room'
+    url: './homePage/gallery/galleryAadityaheritageO.webp',
+    caption: 'Affordable rooms for large families at Dr. Bhoir Farm and Resort'
   },
   {
-    url: './Swimming pool.jpg',
-    caption: 'Pool View'
+    url: './homePage/gallery/gallerySwimmingpoolO.webp',
+    caption: 'Amazing pool for adults and kids with rain dance and mushroom at Dr. Bhoi Farm and Resort'
   },
   {
-    url: './villafull.png',
-    caption: 'Cozy Stays Crafted Just for You.'
+    url: './homePage/gallery/galleryVillafullO.webp',
+    caption: 'Luxury accommodations at affordable prices near Mumbai at Dr. Bhoir Farm and Resort.'
   },
   {
-    url: './outdoor activities.jpg',
-    caption: 'Outdoor Activity'
+    url: './homePage/gallery/galleryOutdoorO.webp',
+    caption: 'Range of Outdoor activities at Dr. Bhoir Farm and Resort in Badlapur'
   },
   {
-    url: './dine/dininghall2GC.png',
-    caption: 'Dining'
+    url: './homePage/gallery/galleryDininghallO.webp',
+    caption: 'Best cuisines available at Dr. Bhoir Farm and Resort'
   },
   {
-    url: './collageC.png',
-    caption: 'View'
+    url: './homePage/gallery/galleryCollageO.webp',
+    caption: 'Enjoy your weekends at the heart of nature at Dr. Bhoir Farm and Resort, Kalyan-Badlapur region'
   }
 ];
 export default function Gallery_Home_Overview () {

@@ -4,62 +4,62 @@ import { assets } from '../../assets/assets';
 
 const Feature = [
   {
-    url: './location/villaG.png',
+    url: './homePage/feature/featureVillaO.webp',
     title: 'Luxury Accommodation',
     caption: 'Experience comfort in our beautifully designed rooms and suites.'
   },
   {
-    url: assets.finedine,
+    url: './homePage/feature/featurefinedineO.webp',
     title: 'Fine Dining',
     caption: 'From the rich spices of Indian cuisine to the savory delights of Chinese dishes.'
   },
   {
-    url: 'https://plus.unsplash.com/premium_photo-1682125816787-4db071ef2da8?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    url: './homePage/feature/featureDJMusicO.webp',
     title: 'DJ Music',
     caption: 'Turn Up the Celebration'
   },
   {
-    url: 'https://images.unsplash.com/photo-1642056446459-1f10774273f2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    url: './homePage/feature/featureIndoorGamesO.webp',
     title: 'Indoor Games',
     caption: 'Fun Unlimited, Anytime!'
   },
   {
-    url: './outdoor activities.jpg',
+    url: './homePage/feature/featureOutdoorGamesO.webp',
     title: 'Outdoor Games',
     caption: 'Play. Explore. Unwind!'
   },
   {
-    url: './activities/raindanceG.png',
-    title: 'Raindance and Mushroom',
+    url: './homePage/feature/featureRainDanceO.webp',
+    title: 'Rain Dance and Mushroom',
     caption: "Delight in our exhilarating rain dance area, featuring a vibrant mushroom waterfall, perfect for guests of all ages."
   },
   {
-    url: './activities/children parkG.png',
+    url: './homePage/feature/featureChildrenParkO.webp',
     title: 'Children Park',
     caption: "A dedicated children's park equipped with engaging play structures, ensuring endless fun and adventure for your little ones."
   },
   {
-    url: './Swimming pool.jpg',
+    url: './homePage/feature/featureSwimmingPoolO.webp',
     title: 'Swimming Pool',
     caption: 'Swim. Splash. Soak in the Fun!'
   },
   {
-    url: 'https://plus.unsplash.com/premium_photo-1670270204672-d569288343e3?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    url: './homePage/feature/featurePartyO.webp',
     title: 'Party',
     caption: 'Dance, Dine, and Celebrate in Style!'
   },
   {
-    url: './Events.jpg',
+    url: './homePage/feature/featureEventsO.webp',
     title: 'Events',
     caption: "Celebrate Life's Special Moments."
   },
   {
-    url: './Parking.png',
+    url: './homePage/feature/featureParkingO.webp',
     title: 'Parking',
     caption: 'Hassle-Free Parking, Stress-Free Celebrations!'
   },
   {
-    url: './Sightseeing.png',
+    url: './homePage/feature/featureSightseeingO.webp',
     title: 'Sightseeing',
     caption: "Reconnect with Nature's Beauty."
   }

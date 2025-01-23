@@ -8,7 +8,7 @@ const PropertyRules = () => {
         <p className="text-lg md:text-xl mb-3 text-center scale-up-center">To ensure a pleasant and safe experience for all our guests, please adhere to the following guidelines during your stay</p>
         <div className="group relative grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 scale-up-center">
             <div className='flex flex-col items-center justify-center object-cover bg-primary scale-up-center'>
-                <img className='w-3/5' src="./logo_whitebg_trans.png" alt="" />
+                <img className='w-3/5' src="./accoms/accoms_logo_whitebg_trans.webp" alt="" />
             </div>
 
             <div className='flex flex-col pt-4 pb-8 px-4 gap-3'>

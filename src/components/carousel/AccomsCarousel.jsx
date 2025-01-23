@@ -1,30 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-const Accoms = [
-   {
-      url: './coupleroom.png',
-      title: 'Couple Rooms',
-      caption: 'Cozy and intimate spaces, perfect for a romantic escape.'
-    },
-    {
-      url: './location/6-bedG.png',
-      title: 'Six-Bedroom Homes',
-      caption: 'Spacious and comfortable, ideal for families.'
-    },
-    {
-      url: './location/5-bed roomG.png',
-      title: 'Five-Bedroom Homes',
-      caption: 'Lavish living with premium amenities for groups.'
-    },
-    {
-      url: './villa.png',
-      title: 'Luxury Villa',
-      caption: 'Lavish living with premium amenities for groups.'
-    },
-];
-
-const AccomsCarousel = () => {
+const AccomsCarousel = ({Accoms}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 

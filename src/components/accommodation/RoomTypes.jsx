@@ -10,7 +10,8 @@ const rooms = [
     title: "Couples Room",
     description: "Cozy and romantic, our couples' rooms offer a tranquil retreat for two, complete with modern amenities, serene ambiance, and stunning views for the perfect getaway.",
     capacity: 2,
-    imageUrl: ["./location/coupleroomC.png"],
+    imageUrl: ["./accoms/accomsCoupleroomO.webp"],
+    alt: "Couples Room at Dr. Bhoir Farm and Resort, Kalyan.",
     amenities: {
       wifi: true,
       tv: true,
@@ -24,7 +25,8 @@ const rooms = [
     title: "Five-Bedroom Room",
     description: "Spacious and inviting, our family cottages are designed for comfort, featuring multiple rooms, a common area, and all the essentials for a memorable family vacation.",
     capacity: 10,
-    imageUrl: ["./location/5-bed roomG.png"],
+    imageUrl: ["./accoms/accoms5bedO.webp"],
+    alt: "Five-Bedroom Room at Dr. Bhoir Farm and Resort, Kalyan, Badlapur.",
     amenities: {
       wifi: true,
       tv: true,
@@ -38,9 +40,10 @@ const rooms = [
     title: "Six-Bedroom Homes",
     description: "Ideal for large gatherings, our five-bedroom homes offer ample space, privacy, and premium amenities, ensuring a luxurious and seamless experience for groups or extended families.",
     capacity: 12,
-    imageUrl: ["./location/6-bedG.png",
-      "./location/6bedtoilet.jpeg"
+    imageUrl: ["./accoms/accoms6bedO.webp",
+      "./accoms/accoms6bedtoiletO.webp"
     ],
+    alt: "Affordable Six-Bedroom Rooms near Mumbai at Dr. Bhoir Farm and Resort",
     amenities: {
       wifi: true,
       tv: true,
@@ -54,10 +57,11 @@ const rooms = [
     title: "Eight-Bedroom Homes",
     description: "Ideal for large gatherings, our five-bedroom homes offer ample space, privacy, and premium amenities, ensuring a luxurious and seamless experience for groups or extended families.",
     capacity: 16,
-    imageUrl: ["./location/8-bed 1.jpg",
-      "./location/8-bed 2.jpg",
-      "./location/8bedtoilet.jpeg"
+    imageUrl: ["./accoms/accoms8bed1O.webp",
+      "./accoms/accoms8bed2O.webp",
+      "./accoms/8bedtoiletO.webp"
     ],
+    alt: "Spacious and elegantly designed 8-bed rooms at Dr. Bhoir Farm and Resort, offering comfort and luxury for group stays near Badlapur. Perfect for family vacations, corporate retreats, and weekend getaways.",
     amenities: {
       wifi: true,
       tv: true,
@@ -71,12 +75,13 @@ const rooms = [
     title: "Luxury Villa",
     description: "Indulge in elegance with our luxury villas, boasting premium furnishings, private spaces, and exclusive amenities for a truly lavish stay surrounded by nature.",
     capacity: 24,
-    imageUrl: ["/villa.png",
-      "./location/villa1.png",
-      "./location/villaroom1.png",
-      "./location/villaroom2.png",
-      "./location/villaroom3.png"
+    imageUrl: ["./accoms/accomsVillaO.webp",
+      "./accoms/accomsVillaRoom1O.webp",
+      "./accoms/accomsVillaRoom2O.webp",
+      "./accoms/accomsVillaRoom3.webp",
+      "./accoms/accomsVillaStairsO.webp"
     ],
+    alt: "Luxurious 12-room villa at Dr. Bhoir Farm and Resort near Badlapur, perfect for large groups, corporate retreats, and family gatherings. Enjoy spacious accommodations with modern amenities in a serene natural setting.",
     amenities: {
       wifi: true,
       tv: true,
@@ -123,7 +128,7 @@ export default function RoomsType() {
             <div className='md:w-1/2 cursor-pointer' onClick={() => openModal(rooms)}>
             <img
               src={rooms.imageUrl[0]}
-              alt={rooms.title}
+              alt={rooms.alt}
               className='h-full sm:h-[450px] overflow-hidden w-full object-cover hover:scale-105 transition-transform duration-500 scale-up-center'
             />
             <div className='cursor-pointer w-full bg-gray-800 flex items-center justify-center' onClick={() => openModal(rooms)}>

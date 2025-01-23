@@ -8,9 +8,9 @@ const About = () => {
     <div className='pt-16'>
       {/* Hero Section */}
       <div 
-        className="relative h-[40vh] bg-cover bg-bottom"
+        className="relative h-[40vh] bg-cover bg-bottom pt-16"
         style={{
-          backgroundImage: 'url("./aboutus.png")'
+          backgroundImage: 'url("./about/aboutTitleO.webp")'
         }}>
           <div className="absolute inset-0 bg-black bg-opacity-50" />
         <div className="relative h-full flex items-center justify-center">
@@ -35,8 +35,8 @@ const About = () => {
           </div>
           <div className='slide-in-bottom-t'>
             <img
-              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-              alt="Resort Overview"
+              src="./about/about1O.webp"
+              alt="Dr. Bhoir Farm and Resort, a getaway with natural surroundings close to Mumbai"
               className="rounded-lg shadow-lg"
             />
           </div>
@@ -46,8 +46,8 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-16 items-start">
           <div className='scale-up-center order-2 sm:order-1'>
             <img
-              src="https://www.hotelswithprivatepool.com/Images/hotels-private-pool-phuket-anantara-layan-phuket-resort.jpg"
-              alt="Resort Overview"
+              src="./about/about2O.webp"
+              alt="Dr. Bhoir Farm and Resort offers premium services at affordable prices"
               className="rounded-lg shadow-lg"
             />
           </div>

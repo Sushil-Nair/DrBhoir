@@ -7,10 +7,10 @@ import { ImagesSlider } from '../components/ui/images-slider'
 
 const HomePage = () => {
   const images = [
-    './adityaheritage.jpeg',
-    './hero.jpg',
-    './hero2.png',
-    './Swimming pool.jpg'
+    './homePage/hero/hero1O.webp',
+    './homePage/hero/hero2O.webp',
+    './homePage/hero/hero3O.webp',
+    './homePage/hero/hero4O.webp'
   ]
   return (
     <div>

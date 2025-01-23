@@ -5,22 +5,22 @@ import AccomsCarousel from '../carousel/AccomsCarousel';
 
 const Accoms = [
    {
-      url: './coupleroom.png',
+      url: './homePage/accommodation/accomsCoupleroomO.webp',
       title: 'Couple Rooms',
       caption: 'Cozy and intimate spaces, perfect for a romantic escape.'
     },
     {
-      url: './location/6-bedG.png',
+      url: './homePage/accommodation/accoms6bedO.webp',
       title: 'Six-Bedroom Homes',
       caption: 'Spacious and comfortable, ideal for families.'
     },
     {
-      url: './location/5-bed roomG.png',
+      url: './homePage/accommodation/accoms5bedO.webp',
       title: 'Five-Bedroom Homes',
       caption: 'Lavish living with premium amenities for groups.'
     },
     {
-      url: './villa.png',
+      url: './homePage/accommodation/accomsVillaO.webp',
       title: 'Luxury Villa',
       caption: 'Lavish living with premium amenities for groups.'
     },
@@ -47,7 +47,9 @@ const Accoms = [
              
            </div>
            <div className="sm:hidden text-center flex-col items-center justify-center group relative px-4 scale-up-center">
-             <AccomsCarousel />
+             <AccomsCarousel 
+             Accoms={Accoms}
+             />
            </div>
 
            <div className='flex flex-col w-full mt-4 group relative gap-10'>
