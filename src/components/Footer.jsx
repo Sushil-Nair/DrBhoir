@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
         <div className='flex items-center justify-center mb-7 w-full'>
             <NavLink to='/' className='flex flex-col lg:flex-row items-center mb-7 cursor-pointer'>
-              <img className='w-24' src='./footer_logo.png' alt="" />
+              <img className='w-24' src='./footer_logo.webp' alt="" />
               <p className='text-xl font-bold text-nowrap'>Dr. Bhoir Farm & Resort</p>
             </NavLink>
         </div>
