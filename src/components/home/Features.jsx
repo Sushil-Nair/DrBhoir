@@ -71,12 +71,13 @@ const Feature = [
     <div>
         <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 bg-primary">
          <h3 className="text-2xl font-semibold text-center mb-7 scale-up-center">Our Features</h3>
-         <div className="hidden sm:grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
+         <div className="hidden sm:grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {Feature.map((feature, index) => (
             <div key={index} className="text-center flex-col items-center justify-center group relative scale-up-center">
              <img
                src={feature.url}
                alt={feature.title}
+               loading='lazy'
                className="w-52 h-52 object-cover shadow-xl rounded-lg mb-4 m-auto transition-transform duration-300 group-hover:scale-105"
              />
              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>

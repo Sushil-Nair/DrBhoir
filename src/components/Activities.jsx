@@ -28,6 +28,10 @@ const activities = [
     caption: 'Volleyball'
   },
   {
+    url: './activities/activitiesBasketBallO.webp',
+    caption: 'Basketball'
+  },
+  {
     url: './activities/activitiesbadmintonO.webp',
     caption: 'Badminton'
   },
@@ -54,6 +58,10 @@ const activities = [
   {
     url: './activities/activitiesOpenlawnO.webp',
     caption: 'Open Lawn'
+  },
+   {
+    url: './homePage/gallery/galleryOutdoorO.webp',
+    caption: 'Turf'
   }
 ]; 
 
@@ -128,7 +136,7 @@ export default function Activities () {
                 <h1 className="text-2xl md:text-3xl font-semibold text-black mb-10 scale-up-center">Celebrate at Our Venue</h1>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-20">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-20">
               {events.map((image, index) => (
                 <div key={index} className="group relative scale-up-center aspect-square">
                   <img

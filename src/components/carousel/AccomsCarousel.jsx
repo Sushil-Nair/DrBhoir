@@ -45,6 +45,7 @@ const AccomsCarousel = ({Accoms}) => {
           <img
             src={Accoms[currentIndex].url}
             alt={Accoms[currentIndex].title}
+            loading='lazy'
             className="w-full h-full object-cover"
           />
           {/* Caption Overlay */}

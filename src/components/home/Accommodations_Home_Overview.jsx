@@ -38,6 +38,7 @@ const Accoms = [
                  <img
                    src={link.url}
                    alt={link.title}
+                   loading='lazy'
                    className="w-60 h-60 object-cover shadow-xl rounded-lg mb-4 m-auto transition-transform duration-300 group-hover:scale-105"
                  />
                  <h3 className="text-xl font-semibold mb-2">{link.title}</h3>

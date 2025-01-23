@@ -109,6 +109,7 @@ const FeatureCarousel = () => {
           <img
             src={Feature[currentIndex].url}
             alt={Feature[currentIndex].title}
+            loading='lazy'
             className="w-full h-full object-cover"
           />
           {/* Caption Overlay */}
