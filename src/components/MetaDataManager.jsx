@@ -5,9 +5,9 @@ const MetadataManager = ({
   description = 'Welcome to Dr. Bhoir Farm & Resort, your premier destination for a serene and luxurious getaway in the heart of the Kalyan - Badlapur region.',
   keywords = 'Best farm resort near Mumbai, Weekend getaway in Kalyan, Ambarnath and Badlapur region, Maharashtrian cuisine resort, Family-friendly resorts near Mumbai, Luxury accommodations in Kalyan, Nature resorts in Maharashtra',
   author = 'Dr. Santosh Bhoir',
-  ogTitle = null,
-  ogDescription = null,
-  ogImage = null,
+  ogTitle = 'Dr. Bhoir Farm and Resort – A Perfect Getaway in Badlapur for Nature & Relaxation',
+  ogDescription = "Nestled in the scenic Kalyan-Badlapur region, Dr. Bhoir Farm and Resort is the ideal escape from city life. Located just a short drive from Mumbai, Navi Mumbai, and Thane, our resort offers a serene retreat with lush greenery, luxurious stays, and exciting activities like rain dance, adventure sports, and local delicacies. Whether you're planning a family outing, a romantic getaway, or a group adventure, experience the perfect blend of nature and comfort at our resort.",
+  ogImage = "./ogImage.webp",
   twitterCard = 'summary_large_image',
   canonicalUrl = null,
   children
