@@ -10,21 +10,5 @@ export default defineConfig({
         main: "/index.html",
       },
     },
-  },
-  server: {
-    historyApiFallback: {
-      index: '/',
-      rewrites: [
-        { from: /.*/, to: '/index.html' }
-      ]
-    }
-  },
-  preview: {
-    historyApiFallback: {
-      index: '/',
-      rewrites: [
-        { from: /.*/, to: '/index.html' }
-      ]
-    }
   }
 })
