@@ -1,7 +1,6 @@
-import React from 'react'
-import { FaPhone } from 'react-icons/fa'
-import { FaUpRightFromSquare } from 'react-icons/fa6'
-import UiButton from './UiButton'
+import React from 'react';
+import UiButton from './UiButton';
+import { NavLink } from 'react-router';
 
 const DirectContact = () => {
   return (
@@ -14,12 +13,12 @@ const DirectContact = () => {
             <div className='flex w-full sm:w-1/2 flex-col items-start sm:items-end gap-2'>
                     <div className='flex gap-2 items-center text-nowrap'>
                         <p className='text-base sm:text-lg font-semibold'>Checkout our rooms</p> 
-                        <a href="/accommodation"><UiButton /></a>
+                        <NavLink to="/accommodation"><UiButton /></NavLink>
                     </div>
     
                     <div className='flex gap-2 items-center text-nowrap'>
                         <p className='text-base sm:text-lg font-semibold'>Explore Our Activities</p> 
-                        <a href="/activities"><UiButton /></a>
+                        <NavLink to="/activities"><UiButton /></NavLink>
                     </div>
     
                     <div className='flex gap-2 items-center text-nowrap'>
