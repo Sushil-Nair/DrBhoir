@@ -13,17 +13,17 @@ const DirectContact = () => {
             <div className='flex w-full sm:w-1/2 flex-col items-start sm:items-end gap-2'>
                     <div className='flex gap-2 items-center text-nowrap'>
                         <p className='text-base sm:text-lg font-semibold'>Checkout our rooms</p> 
-                        <NavLink to="/accommodation"><UiButton /></NavLink>
+                        <NavLink name="Checkout our rooms" to="/accommodation"><UiButton /></NavLink>
                     </div>
     
                     <div className='flex gap-2 items-center text-nowrap'>
                         <p className='text-base sm:text-lg font-semibold'>Explore Our Activities</p> 
-                        <NavLink to="/activities"><UiButton /></NavLink>
+                        <NavLink name="Explore Our Activities" to="/activities"><UiButton /></NavLink>
                     </div>
     
                     <div className='flex gap-2 items-center text-nowrap'>
                         <p className='text-base sm:text-lg font-semibold'>Call Us Today</p> 
-                        <a href="tel:9769771278"><UiButton /></a>
+                        <a href="tel:9769771278" name="Call Us Today"><UiButton /></a>
                     </div>
                 </div>
         </div>

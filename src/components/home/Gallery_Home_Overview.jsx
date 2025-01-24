@@ -40,6 +40,7 @@ export default function Gallery_Home_Overview () {
         <div className='flex flex-col w-full mt-4 group relative gap-10'>
             <NavLink
                 to="/gallery"
+                name="See All Highlight"
                 className="inline-flex items-center mx-auto bg-cta text-white font-bold px-6 py-3 rounded-lg hover:bg-green-900 transition-transform duration-300 group-hover:scale-105">
                 See All Highlight
                 <FaArrowRight className="ml-2 h-5 w-5 heartbeat" />
