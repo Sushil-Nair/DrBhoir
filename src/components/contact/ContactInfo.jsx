@@ -63,7 +63,6 @@ const ContactInfo = () => {
                      <Phone className="h-6 w-6 text-green-600 mr-4" />
                      <div>
                        <h3 className="font-semibold">Phone</h3>
-                       <a href="tel:9769771278" className='text-gray-600'>+91-9769771278</a><br />
                        <a href="tel:8779414474" className='text-gray-600'>+91-8779414474</a>
                      </div>
                    </div>
