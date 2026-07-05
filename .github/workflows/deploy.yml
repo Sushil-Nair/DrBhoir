@@ -32,5 +32,9 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./dist/ # Change to ./dist/ if you use Vite instead of Create React App
+        local-dir: ./dist/
         server-dir: /public_html/
+        protocol: ftps      # Forces secure connection required by Hostinger
+        port: 21            # Matches Hostinger standard secure port
+        timeout: 60000      # Extends connection limit to 60 seconds
+
