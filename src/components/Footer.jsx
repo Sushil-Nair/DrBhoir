@@ -20,10 +20,6 @@ const Footer = () => {
             <div className="space-y-3">
               <p className="flex items-start">
                 <FaPhoneAlt className="min-h-5 min-w-5 mr-3" />
-                <a href="tel:9769771278">+91-9769771278</a>
-              </p>
-              <p className="flex items-start">
-                <FaPhoneAlt className="min-h-5 min-w-5 mr-3" />
                 <a href="tel:8779414474">+91-8779414474</a>
               </p>
               <p className="flex items-start">
