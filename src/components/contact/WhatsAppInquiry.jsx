@@ -25,7 +25,7 @@ const WhatsAppInquiry = () => {
                             Chat Now!
                    </NavLink>
                    <NavLink
-                       to="https://wa.me/9769771278"
+                       to="https://wa.me/8779414474"
                        target='_blank'
                        className="flex w-full justify-center text-nowrap items-center mx-auto hover:bg-transparent hover:text-[#25D366] border-[2px] border-[#25D366] font-bold px-3 py-3 rounded-lg bg-[#25D366] text-white mt-4 gap-4 transition-transform duration-300 group-hover:scale-105">
                            <FaWhatsapp className="ml-2 h-5 w-5" />
