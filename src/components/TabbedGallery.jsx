@@ -320,10 +320,6 @@ const TabbedGallery = () => {
               decoding="async"
               className="h-64 w-full object-cover"
             />
-
-            <figcaption className="bg-white p-3 text-sm text-gray-600">
-              {image.caption}
-            </figcaption>
           </figure>
         ))}
       </div>
